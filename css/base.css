@@ -1,0 +1,93 @@
+/* ─────────────────────────────────────────
+   BASE — Reset, Variables, Body
+───────────────────────────────────────── */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important;
+  transition: border-color .3s, color .3s;
+}
+
+/* ── CSS Variables ── */
+:root {
+  /* Colors */
+  --bg:       #080810;
+  --surface:  #0e0e1a;
+  --surface2: #13131f;
+  --border:   rgba(255, 255, 255, .07);
+  --text:     #f0eeff;
+  --muted:    #6b6880;
+  --accent:   #a78bfa;
+  --accent2:  #38bdf8;
+  --accent3:  #f472b6;
+
+  /* Reusable gradient */
+  --grad: linear-gradient(135deg, var(--accent), var(--accent2));
+
+  /* Font families */
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+  --font-body:    'Plus Jakarta Sans', sans-serif;
+}
+
+body.light {
+  --bg:       #f5f4ff;
+  --surface:  #eeedf8;
+  --surface2: #e4e3f2;
+  --border:   rgba(0, 0, 0, .08);
+  --text:     #1a1830;
+  --muted:    #7270a0;
+  --accent:   #7c5cfc;
+  --accent2:  #0ea5e9;
+  --accent3:  #e040a0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  cursor: none;
+  transition: background-color .3s, color .3s;
+}
+
+/* Noise texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8999;
+  opacity: .18;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+}
+
+/* Ambient gradient background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(167, 139, 250, .12) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 10% 80%, rgba( 56, 189, 248, .10) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 30% at 55% 55%, rgba(244, 114, 182, .07) 0%, transparent 50%);
+}
+
+body.light::before {
+  background:
+    radial-gradient(ellipse 60% 40% at 80% 10%, rgba(124,  92, 252, .08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 35% at 10% 80%, rgba( 14, 165, 233, .07) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 30% at 55% 55%, rgba(224,  64, 160, .05) 0%, transparent 50%);
+}
+
+/* ── Shared: gradient text ── */
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

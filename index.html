@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PIXL.DEV — веб-разработчик и дизайнер. Быстрые, красивые и живые веб-продукты.">
+  <meta property="og:title"       content="PIXL.DEV — Веб-разработчик">
+  <meta property="og:description" content="Помогаю бизнесу расти в онлайне. Full-stack разработка, 5+ лет опыта.">
+  <meta property="og:type"        content="website">
+  <title>PIXL.DEV — Веб-разработчик</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <span class="logo-bracket">&lt;</span>PIXL<span class="logo-bracket">.</span>DEV<span class="logo-bracket">/&gt;</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Обо мне</a></li>
+    <li><a href="#portfolio">Портфолио</a></li>
+    <li><a href="#process">Процесс</a></li>
+    <li><a href="#contact">Контакт</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeBtn" aria-label="Сменить тему">
+    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun"  width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+  </button>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-label">Веб-разработчик &amp; дизайнер</p>
+    <h1 class="hero-name">Помогаю бизнесу</h1>
+    <h1 class="hero-name-grad">расти в онлайне</h1>
+    <p class="hero-desc">Привет! Я делаю <strong>быстрые, красивые и живые</strong> веб-продукты. Без скуки, без шаблонов — только то, что реально работает и выглядит огонь.</p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn-p">Смотреть работы</a>
+      <a href="#contact"   class="btn-o">Связаться</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">40<span>+</span></div><div class="stat-lbl">Проектов</div></div>
+      <div><div class="stat-num">5<span>+</span></div> <div class="stat-lbl">Лет опыта</div></div>
+      <div><div class="stat-num">98<span>%</span></div><div class="stat-lbl">Довольных</div></div>
+    </div>
+  </div>
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-dots"></div>
+    <div class="hero-blob"></div>
+    <div class="hero-ring hr3"></div>
+    <div class="hero-ring hr1"></div>
+    <div class="hero-ring hr2"></div>
+  </div>
+</section>
+
+<!-- ── About ── -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="portrait">
+        <div class="portrait-lines"></div>
+        <div class="portrait-glow"></div>
+        <div class="portrait-init">PX</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="sec-label">001 — Обо мне</div>
+      <h2 class="sec-title about-title">Full-stack<br><em>разработчик</em></h2>
+      <p class="about-bio">Хей! Я — разработчик с <strong>5-летним стажем</strong>, который реально горит своим делом. Делаю e-commerce, SaaS, интерактивные интерфейсы и всё, что между ними.</p>
+      <p class="about-bio">Пишу код, который не стыдно показать, и думаю о юзере на каждом этапе. Потому что плохой UX — это преступление.</p>
+      <div class="skills">
+        <div class="skill"><div class="skill-dot"></div><span>React / Next.js</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>TypeScript</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>Node.js / Express</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>PostgreSQL</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>GraphQL / REST</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>Docker / AWS</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>Figma / UI</span></div>
+        <div class="skill"><div class="skill-dot"></div><span>Git / CI/CD</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Portfolio ── -->
+<section class="portfolio" id="portfolio">
+  <div class="sec-hdr reveal">
+    <div>
+      <div class="sec-label">002 — Портфолио</div>
+      <h2 class="sec-title">Мои<br><em>проекты</em></h2>
+    </div>
+  </div>
+  <div class="pf-gap">
+    <div id="user-grid"></div>
+    <div id="adminBar">
+      <button class="add-btn" id="addBtn" style="display:none" aria-label="Добавить проект">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><line x1="7" y1="1" x2="7" y2="13" stroke="currentColor" stroke-width="1.5"/><line x1="1" y1="7" x2="13" y2="7" stroke="currentColor" stroke-width="1.5"/></svg>
+        Добавить проект
+      </button>
+      <button class="admin-logout-btn" id="adminLogoutBtn" style="display:none" aria-label="Выйти из админки">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Выйти из админки
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── Process ── -->
+<section class="process" id="process">
+  <div class="sec-hdr reveal">
+    <div>
+      <div class="sec-label">003 — Процесс</div>
+      <h2 class="sec-title">Как я<br><em>работаю</em></h2>
+    </div>
+  </div>
+  <div class="proc-grid reveal">
+    <div class="proc-step"><div class="step-n">01</div><h3 class="step-t">Аналитика</h3><p class="step-d">Изучаю бизнес, целевую аудиторию и конкурентов. Фиксирую требования и определяю ключевые метрики успеха.</p></div>
+    <div class="proc-step"><div class="step-n">02</div><h3 class="step-t">Проектирование</h3><p class="step-d">Создаю информационную архитектуру, прототипы в Figma и согласовываю визуальное направление с клиентом.</p></div>
+    <div class="proc-step"><div class="step-n">03</div><h3 class="step-t">Разработка</h3><p class="step-d">Пишу код итерационно с регулярными демонстрациями. Тестирую на каждом этапе. Использую современный стек.</p></div>
+    <div class="proc-step"><div class="step-n">04</div><h3 class="step-t">Запуск</h3><p class="step-d">Деплой, финальное QA-тестирование, обучение команды клиента. Поддержка и мониторинг после релиза.</p></div>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="sec-label">004 — Контакт</div>
+    <h2 class="sec-title reveal">Есть идея?<br><em>Погнали!</em></h2>
+    <p class="contact-sub reveal">Всегда открыт к новым коллабам и крутым задачам.<br>Пиши — обычно отвечаю быстро, без воды.</p>
+    <div class="contact-btns reveal">
+      <a href="mailto:hello@pixl.dev" class="btn-p">hello@pixl.dev</a>
+      <a href="https://t.me/pixldev"        target="_blank" rel="noopener" class="btn-o">Telegram</a>
+      <a href="https://github.com/pixldev"  target="_blank" rel="noopener" class="btn-o">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-copy">© 2025 PIXL.DEV</div>
+  <ul class="footer-links">
+    <li><a href="https://github.com/pixldev"    target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://t.me/pixldev"           target="_blank" rel="noopener">Telegram</a></li>
+    <li><a href="https://linkedin.com/in/pixldev" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+</footer>
+
+<!-- ── Add Project Modal ── -->
+<div class="modal-overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-x" id="closeBtn" aria-label="Закрыть">✕</button>
+    <div class="modal-lbl">// Новый проект</div>
+    <h2 class="modal-title" id="modalTitle">Добавить<br><em>работу</em></h2>
+    <div class="field"><label for="f-name">Название *</label><input type="text" id="f-name" placeholder="My Awesome Project" maxlength="60" autocomplete="off"></div>
+    <div class="field">
+      <label for="f-cat">Категория</label>
+      <select id="f-cat">
+        <option>E-commerce</option>
+        <option>Landing Page</option>
+        <option>Корпоративный сайт</option>
+        <option>SaaS Платформа</option>
+        <option>Портфолио</option>
+        <option>Блог / Медиа</option>
+        <option>Другое</option>
+      </select>
+    </div>
+    <div class="field"><label for="f-desc">Описание *</label><textarea id="f-desc" placeholder="Кратко опишите проект..." maxlength="300"></textarea></div>
+    <div class="field-row">
+      <div class="field"><label for="f-url">Ссылка на сайт</label><input type="url" id="f-url" placeholder="https://..."></div>
+      <div class="field"><label for="f-gh">GitHub</label><input type="url" id="f-gh" placeholder="https://github.com/..."></div>
+    </div>
+    <div class="field">
+      <label>Скриншот проекта</label>
+      <label for="f-img" id="uploadArea" class="img-upload-area">
+        <input type="file" id="f-img" accept="image/*">
+        <div class="img-upload-icon">🖼</div>
+        <div class="img-upload-text">Нажмите или перетащите файл<br><span style="opacity:.5;font-size:10px">PNG, JPG, WebP — до 5MB</span></div>
+      </label>
+      <div id="previewWrap" class="img-preview-wrap" style="display:none">
+        <img id="imgPreview" class="img-preview" src="" alt="Предпросмотр">
+        <button type="button" id="removeImg" class="img-preview-remove">✕ Удалить</button>
+      </div>
+    </div>
+    <div class="field">
+      <label>Технологии</label>
+      <div class="tags-wrap" id="tagsWrap"><input class="tinput" id="tagsInput" placeholder="React, Node.js... (Enter)" autocomplete="off"></div>
+      <p class="tags-hint">Enter или запятая — добавить тег</p>
+    </div>
+    <div class="field">
+      <label>Цвет акцента</label>
+      <div class="colors" id="colorPicker">
+        <button class="color-opt sel" data-c="#c8a96e" style="background:#c8a96e" aria-label="Золотой"></button>
+        <button class="color-opt"     data-c="#7eb8a4" style="background:#7eb8a4" aria-label="Мятный"></button>
+        <button class="color-opt"     data-c="#d4654a" style="background:#d4654a" aria-label="Красный"></button>
+        <button class="color-opt"     data-c="#7090d4" style="background:#7090d4" aria-label="Синий"></button>
+        <button class="color-opt"     data-c="#a070c8" style="background:#a070c8" aria-label="Фиолетовый"></button>
+        <button class="color-opt"     data-c="#60b878" style="background:#60b878" aria-label="Зелёный"></button>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-submit" id="submitBtn">Добавить проект</button>
+      <button class="btn-cancel" id="cancelBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Admin Auth Modal ── -->
+<div class="modal-overlay" id="authOverlay" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="modal" style="max-width:400px">
+    <button class="modal-x" id="authCloseBtn" aria-label="Закрыть">✕</button>
+    <div class="modal-lbl">Доступ</div>
+    <h2 class="modal-title" id="authTitle">Вход для <em>админа</em></h2>
+    <div class="field">
+      <label for="adminPassword">Пароль</label>
+      <input type="password" id="adminPassword" placeholder="Введите пароль" autocomplete="off">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-submit" id="authSubmitBtn">Войти</button>
+      <button class="btn-cancel" id="authCancelBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Toast ── -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ── Project data (updated by server.js on save) ── -->
+<!-- USER_DATA:START -->
+<script id="USER_DATA" type="application/json">[]</script>
+<!-- USER_DATA:END -->
+
+<!-- ── Scripts (order matters) ── -->
+<script src="js/utils.js"></script>
+  <script src="js/theme.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/cursor.js"></script>
+
+</body>
+</html>

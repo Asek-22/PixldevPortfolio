@@ -1,0 +1,50 @@
+/* ─────────────────────────────────────────
+   ANIMATIONS — Keyframes, Reveal, Responsive
+───────────────────────────────────────── */
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .7s cubic-bezier(.23, 1, .32, 1), transform .7s cubic-bezier(.23, 1, .32, 1);
+}
+.reveal.vis { opacity: 1; transform: translateY(0); }
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1);    opacity: .6; }
+  50%       { transform: translate(-50%, -50%) scale(1.15); opacity: 1;  }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0);   }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX( 6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX( 4px); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  nav, nav.sc   { padding: 16px 20px; }
+  section       { padding: 80px 20px; }
+  .hero         { grid-template-columns: 1fr; }
+  .hero-left    { padding: 110px 20px 60px; }
+  .hero-right   { display: none; }
+  .about-grid   { grid-template-columns: 1fr; }
+  .pf-row3      { grid-template-columns: 1fr; }
+  .proc-grid    { grid-template-columns: 1fr 1fr; }
+  footer        { flex-direction: column; gap: 14px; }
+}
+@media (max-width: 480px) {
+  .proc-grid    { grid-template-columns: 1fr; }
+  .hero-stats   { gap: 24px; }
+  .hero-btns    { flex-direction: column; }
+  .contact-btns { flex-direction: column; align-items: center; }
+}
